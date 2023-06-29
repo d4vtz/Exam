@@ -1,0 +1,168 @@
+%Exam Template CONAMAhh
+%created by: David Torrez Reyes
+\documentclass[a4paper, 12pt]{article}
+
+
+\input{Structure/preambule}
+\input{Structure/header}
+\input{Structure/commands}
+
+
+\begin{document}
+\maketitle\thispagestyle{fancy}
+
+
+\Instructions[4]{Contesta correctamente las siguentes cuestiones}
+
+\begin{Questions}
+      \item \Question{
+            Calcula el diferencial de la función:
+            \begin{equation*}
+                  y = 4x^3 + 2x^2 - 6x + 5.
+            \end{equation*}
+      }
+      {$(12x^2 - 4x + 6) \odif{x}$}
+      {$(12x^2 + 4x - 6) \odif{x}$}
+      {$(12x^2 - 4x - 6) \odif{x}$}
+
+      \item \Question{
+            Para calcular la raiz de un número de forma aproximada, se utiliza el diferencial de la función $f(x) = \sqrt{x}$, el cual esta dado por:
+      }
+      {$\frac{\odif{x}}{\sqrt{x}}$}
+      {$\frac{\odif{x}}{2\sqrt{x}}$}
+      {$\frac{2\odif{x}}{\sqrt{x}}$}
+
+      \item \Question{
+            Para hallar el area bajo la curva de la función $f(x)$ en el intervalo $[a, b]$ utilizando la suma de Riemann, se necesita particionar el intervalo, por lo cual, con rectangulos de base:
+      }
+      {$x_{i} = a + i \Delta x$}
+      {$x_{i} = a + i \Delta f$}
+      {$x_{i} = a + i \Delta b$}
+
+      \item \Question{
+            El area bajo una curva esta dado por la suma de Riemann:
+      }
+      {$\displaystyle\lim_{n \to \infty} \displaystyle\sum_{i=1}^{n} f(x_{i}) \Delta x_{i}$}
+      {$\displaystyle\lim_{n \to \infty} \displaystyle\sum_{i=1}^{n} f(x) \Delta x$}
+      {$\displaystyle\lim_{n \to \infty} \displaystyle\sum_{i=1}^{n} f(x_{i}) \Delta x$}
+      \newpage
+      \item \Question{
+            Identifica cual es el teorema fundamental del Cálculo:
+      }
+      {$\displaystyle\int_{a}^{b} f(x) \odif{x} = F(b) - F(a)$}
+      {$\displaystyle\int_{a}^{b} f(x) \odif{x} = F(a) - F(b)$}
+      {$\displaystyle\int_{b}^{a} f(x) \odif{x} = F(b) - F(a)$}
+
+      \item \Question{
+            Determina la antiderivada de la función $f(x) = 5x^4 + 3x^2 + 8$.
+      }
+      {$x^5 + x^3 + 8x + c$}
+      {$2x^3 + x^2 + x^8 + c$}
+      {$4x^5 + 2x^4 + 8 + c$}
+
+      \item \Question{
+            Cual es el resultado de la siguente integral:
+            \begin{eqnarray*}
+                  \displaystyle\int \sqrt[3]{x} \odif{x}
+            \end{eqnarray*}
+      }
+      {$\displaystyle\frac{3 x^{\frac{3}{4}}}{4} + c$}
+      {$\displaystyle\frac{3 \sqrt[3]{x^{4}}}{4} + c$}
+      {$\displaystyle\frac{3 \sqrt[4]{x^{3}}}{4} + c$}
+      \item \Question{
+            Cual es el resultado de la siguente integral:
+            \begin{eqnarray*}
+                  \displaystyle\int \left( 3x^3 -8x^4 + \displaystyle\frac{10}{3} \right) \odif{x}
+            \end{eqnarray*}
+      }
+      {$\displaystyle\frac{3 x^{4}}{4} - 8x^5 + \displaystyle\frac{10x}{3} + c$}
+      {$\displaystyle\frac{3 x^{4}}{4} - \displaystyle\frac{40 x^5}{5} + \displaystyle\frac{10x}{3} + c$}
+      {$\displaystyle\frac{3 x^{4}}{4} - \displaystyle\frac{8x^5}{5} + \displaystyle\frac{10x}{3} + c$}
+
+      \item \Question{
+            Al realizar la integral $\displaystyle\int \displaystyle\frac{(3x - 8)^3}{5} \odif{x}$, se realiza un cambio de variable, de cual se trata:
+      }
+      {$u = 3x - 8$}
+      {$u = \displaystyle\frac{3x - 8}{5}$}
+      {$u = (3x - 8)^3$}
+      \newpage
+      \item \Question{
+            Dada el reactivo anterior, cual es el resultado de la integral:
+      }
+      {$\displaystyle\frac{(3x - 8)^5}{15} + c$}
+      {$\displaystyle\frac{(3x - 8)^4}{75} + c$}
+      {$\displaystyle\frac{(3x - 8)^5}{5} + c$}
+
+      \item \Question{
+            Al realizar la siguente integral $\displaystyle\int \displaystyle\frac{\odif{x}}{2x -3}$ se propone como cambio de variable $u = 2x - 3$. Entonces cual es diferencial $\odif{u}$:
+      }
+      {$2 \odif{x}$}
+      {$-3 \odif{x}$}
+      {$\displaystyle\frac{\odif{x}}{2}$}
+
+      \item \Question{
+            Cual es resultado de la integral del reactivo anterior:
+      }
+      {$\displaystyle\frac{1}{2}\ln (2x -3) + c$}
+      {$\displaystyle\frac{1}{3}\ln (2x -3) + c$}
+      {$\displaystyle\frac{1}{2}\ln (\displaystyle\frac{2x-3}{2}) + c$}
+
+      \item \Question{
+            la integral $\displaystyle\int \tan(x) \odif{x}$ tambien se puede expresar como:
+      }
+      {$\displaystyle\int \displaystyle\frac{\sin(x)}{\sec(x)} \odif{x}$}
+      {$\displaystyle\int \displaystyle\frac{\sin(x)}{\cos(x)} \odif{x}$}
+      {$\displaystyle\int \displaystyle\frac{\cos(x)}{\sin(x)} \odif{x}$}
+
+      \Question{
+            Cual es la factorización de $x^2 - 7x + 12$
+      }
+      {$(x - 4)(x + 3)$}
+      {$(x + 4)(x - 3)$}
+      {$(x - 4)(x - 3)$}
+
+      \Question{
+            Dada la fracción $\displaystyle\frac{ x + 1}{x^2 - 7x + 12}$, si se requiere expresar en sus fracciones parciales, entonces como la podemos reescribir:
+      }
+      {$\displaystyle\frac{A}{x-4} + \displaystyle\frac{Bx}{x-3}$}
+      {$\displaystyle\frac{A}{x+4} + \displaystyle\frac{B}{x-3}$}
+      {$\displaystyle\frac{A}{x-4} + \displaystyle\frac{B}{x-3}$}
+      \item \Question{
+            Siguendo el reactivo anterior, cual es el sistema de ecuaciones a resolver:
+      }
+      {$\left\{
+                  \begin{array}{ l }
+                        A + B = 1 \\
+                        -3A - 4B = 1
+                  \end{array}
+                  \right.$}
+      {$\left\{
+                  \begin{array}{ l }
+                        A + B = 1 \\
+                        -3A - 4B = 0
+                  \end{array}
+                  \right.$}
+      {$\left\{
+                  \begin{array}{ l }
+                        A + B = 0 \\
+                        -3A - 4B = 1
+                  \end{array}
+                  \right.$}
+
+      \item \Question{
+            Si resolvemos el sistema de ecuaciones anterior obtenemos:
+      }
+      {$A=5$ y $B=4$}
+      {$A=5$ y $B=-4$}
+      {$A=-5$ y $B=4$}
+
+      \item \Question{
+      Al realizar la integral definida $\displaystyle\int_{0}^{2\pi} \sin(2x) \odif{x}$ se realiza el cambio de variable $u=2x$, entonces como cambian los limites de integración.
+      }
+      {$\displaystyle\int_{0}^{4\pi} \sin(u) \odif{u}$}
+      {$\displaystyle\int_{0}^{\pi} \sin(u) \odif{u}$}
+      {$\displaystyle\int_{0}^{\frac{\pi}{2}} \sin(u) \odif{u}$}
+
+\end{Questions}
+\end{document}
+

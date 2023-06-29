@@ -1,0 +1,34 @@
+\NewDocumentCommand\Instructions{om}{
+      \IfNoValueTF{#1}
+      {#2}
+      {
+            #2
+            \begin{flushright}
+                  \textbf{$\mathbf{#1}$ puntos por reactivo}
+            \end{flushright}
+      }
+}
+
+\NewDocumentCommand\Question{mmmm}{
+      #1
+      \begin{enumerate}[label={\alph*)}]
+            \item #2
+            \item #3
+            \item #4
+      \end{enumerate}
+}
+
+\NewDocumentCommand\Problem{O{5}m}{
+      #2
+      \vspace*{#1cm}
+}
+
+
+\newenvironment{Questions}
+{\begin{enumerate}[label=\arabic*]}
+            {\end{enumerate}}
+
+\newenvironment{Parts}
+{\begin{enumerate}[label=\Roman*]}
+            {\end{enumerate}}
+
